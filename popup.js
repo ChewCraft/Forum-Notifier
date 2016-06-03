@@ -1,4 +1,4 @@
-var id = 'SpigotNotifier';
+var id = 'GotPvPNotify';
 
 $(document).ready(function() {
     chrome.storage.local.get('alerts', function(response) {
