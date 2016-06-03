@@ -10,7 +10,7 @@ var lastAlertId = undefined;
 
 function checkEverything() {
     $.ajax({
-        url: 'https://www.spigotmc.org',
+        url: 'https://www.gotpvp.com',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
             checkNotifications(data);
@@ -21,7 +21,7 @@ function checkEverything() {
 	
 function checkNotificationDetails(){
     $.ajax({
-        url: 'https://www.spigotmc.org/account/alerts',
+        url: 'https://www.gotpvp.com/account/alerts',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
 			checkNotificationsEnchanced(data);
