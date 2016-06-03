@@ -7,6 +7,7 @@ Also displays their post count and post rating.
 You have to be logged in on https://www.gotpvp.com/ for it to work.
 
 ~~Click here for the Chrome Web Store page!~~
+
 ^^ COMING SOON ^^
 
 
