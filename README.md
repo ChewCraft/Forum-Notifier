@@ -6,9 +6,8 @@ Also displays their post count and post rating.
 
 You have to be logged in on https://www.gotpvp.com/ for it to work.
 
-~~Click here for the Chrome Web Store page!~~
+[Click here for the Chrome Web Store page!](https://chrome.google.com/webstore/detail/gotpvp-notifier/cnojdkklalnlfadndogkckchiabpkogh)
 
-^^ COMING SOON ^^
 
 
 NOTE: THIS IS A PORT OF https://github.com/Adriani6/SpigotNotifier
