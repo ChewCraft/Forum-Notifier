@@ -10,7 +10,7 @@ var lastAlertId = undefined;
 
 function checkEverything() {
     $.ajax({
-        url: 'https://www.gotpvp.com',
+        url: 'http://gotpvp.com/forum/index.php',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
             checkNotifications(data);
@@ -21,7 +21,7 @@ function checkEverything() {
 	
 function checkNotificationDetails(){
     $.ajax({
-        url: 'https://www.gotpvp.com/account/alerts',
+        url: 'http://gotpvp.com/forum/index.php?account/alerts',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"https://");
 			checkNotificationsEnchanced(data);
@@ -80,11 +80,11 @@ chrome.notifications.onClicked.addListener(function(notificationid) {
     if (my_notids_alerts.indexOf(notificationid) > -1) {
         my_notids_alerts.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("https://www.spigotmc.org/account/alerts");
+        window.open("http://gotpvp.com/forum/index.php?account/alerts");
     } else if (my_notids_messages.indexOf(notificationid) > -1) {
         my_notids_messages.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("https://www.spigotmc.org/conversations/");
+        window.open("http://gotpvp.com/forum/index.php?conversations/");
     }
 });
 
