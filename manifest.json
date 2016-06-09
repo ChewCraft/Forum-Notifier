@@ -2,7 +2,7 @@
     "manifest_version":2,
     "name":"GotPvP Notifier",
     "description":"Get GotPvP.com notifications in chrome.",
-    "version":"0.3",
+    "version":"b0.4",
     "icons":{
         "32":"icon32.png",
         "48":"icon48.png",
