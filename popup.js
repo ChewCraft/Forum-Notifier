@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
 
     chrome.storage.local.get('rating', function(response) {
-        $("#rating").text("+" + response.rating);
+        $("#rating").text("" + response.rating);
     });
     $('body').on('click', 'a', function() {
         chrome.tabs.create({
