@@ -12,7 +12,7 @@ function checkEverything() {
     $.ajax({
         url: 'http://gotpvp.com/forum/index.php',
         success: function(data) {
-            data = data.replace(/\"\/\//g, "\"https://");
+            data = data.replace(/\"\/\//g, "\"http://");
             checkNotifications(data);
             checkProfileStats(data);
 			checkNotificationDetails();
@@ -23,7 +23,7 @@ function checkNotificationDetails(){
     $.ajax({
         url: 'http://gotpvp.com/forum/index.php?account/alerts',
         success: function(data) {
-            data = data.replace(/\"\/\//g, "\"https://");
+            data = data.replace(/\"\/\//g, "\"http://");
 			checkNotificationsEnchanced(data);
         }
     });	
@@ -122,10 +122,10 @@ function checkNotifications(data) {
 
 function checkProfileStats(data) {
     chrome.storage.local.set({
-        'posts': $(data).find("#content").find(".stats").text().split(":")[1].replace("\n", "")
+        'posts': $(data).find("#content").find(".stats").text().split(":")[1].replace("\n\t\t\t\tPosts", "")
     });
     chrome.storage.local.set({
-        'rating': $(data).find("#content").find(".dark_postrating_positive").text()
+        'rating': $(data).find("#content").find(".stats").text().split(":")[2].replace("\n\t\t\t\tLikes", "")
     });
 }
 
