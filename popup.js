@@ -23,8 +23,8 @@ $(document).ready(function() {
         $("#posts").text(response.posts);
     });
 
-    chrome.storage.local.get('rating', function(response) {
-        $("#rating").text("" + response.rating);
+    chrome.storage.local.get('likes', function(response) {
+        $("#likes").text("" + response.likes);
     });
     $('body').on('click', 'a', function() {
         chrome.tabs.create({
