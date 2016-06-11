@@ -7,7 +7,7 @@ $(document).ready(function() {
         } else {
             $("#alerts").css("color", "#B5B5B5");
         }
-        $("#alerts").text(response.alerts + " new");
+        $("#alerts").text(response.alerts + " New");
     });
 
     chrome.storage.local.get('messages', function(response) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
         } else {
             $("#messages").css("color", "#B5B5B5");
         }
-        $("#messages").text(response.messages + " new");
+        $("#messages").text(response.messages + " New");
     });
 
     chrome.storage.local.get('posts', function(response) {
@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
 
     chrome.storage.local.get('likes', function(response) {
-        $("#likes").text("" + response.likes);
+        $("#likes").text(response.likes);
     });
     $('body').on('click', 'a', function() {
         chrome.tabs.create({
