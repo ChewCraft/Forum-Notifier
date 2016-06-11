@@ -122,10 +122,10 @@ function checkNotifications(data) {
 
 function checkProfileStats(data) {
     chrome.storage.local.set({
-        'Posts': $(data).find("#content").find(".stats").text().split(":")[1].replace("\n\t\t\t\tLikes", "")
+        'posts': $(data).find("#content").find(".stats").text().split(":")[1].replace("\n\t\t\t\tLikes", "")
     });
     chrome.storage.local.set({
-        'Likes': $(data).find("#content").find(".stats").text().split(":")[2].replace("\n\t\t\t\tPoints", "")
+        'likes': $(data).find("#content").find(".stats").text().split(":")[2].replace("\n\t\t\t\tPoints", "")
     });
 }
 
