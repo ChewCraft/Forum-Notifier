@@ -56,7 +56,7 @@ body {
 #alerts,
 #messages,
 #posts,
-#likes {
+#rating {
     font-weight: 100;
 }
 #alerts {
@@ -68,6 +68,6 @@ body {
 #posts {
     color: #B5B5B5;
 }
-#likes {
+#rating {
     color: #90FF85;
 }
