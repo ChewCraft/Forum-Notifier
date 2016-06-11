@@ -125,7 +125,7 @@ function checkProfileStats(data) {
         'posts': $(data).find("#content").find(".stats").text().split(":")[1].replace("\n\t\t\t\tPosts", "")
     });
     chrome.storage.local.set({
-        'rating': $(data).find("#content").find(".stats").text().split(":")[2].replace("\n\t\t\t\tLikes", "")
+        'likes': $(data).find("#content").find(".stats").text().split(":")[2].replace("\n\t\t\t\tLikes", "")
     });
 }
 
