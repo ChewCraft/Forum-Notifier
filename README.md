@@ -10,4 +10,4 @@ You have to be logged in on http://gotpvp.com/ for it to work.
 
 
 
-NOTE: THIS IS A PORT OF https://github.com/Adriani6/SpigotNotifier
+NOTE: THIS IS A FORK OF https://github.com/Adriani6/SpigotNotifier
