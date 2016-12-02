@@ -1,6 +1,8 @@
 # GotPvP Notifier
 Google Chrome Extension
 
+![downloads](https://img.shields.io/chrome-web-store/d/cnojdkklalnlfadndogkckchiabpkogh.svg)
+
 Notifies users of their GotPvP account's Messages and Notifications,  
 Also displays their post count and post rating.
 
