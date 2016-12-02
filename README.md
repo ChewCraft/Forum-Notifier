@@ -2,6 +2,9 @@
 Google Chrome Extension
 
 ![downloads](https://img.shields.io/chrome-web-store/d/cnojdkklalnlfadndogkckchiabpkogh.svg)
+![rating](https://img.shields.io/chrome-web-store/stars/cnojdkklalnlfadndogkckchiabpkogh.svg)
+![idklol](https://img.shields.io/chrome-web-store/rating-count/cnojdkklalnlfadndogkckchiabpkogh.svg)
+![version](https://img.shields.io/chrome-web-store/v/cnojdkklalnlfadndogkckchiabpkogh.svg)
 
 Notifies users of their GotPvP account's Messages and Notifications,  
 Also displays their post count and post rating.
