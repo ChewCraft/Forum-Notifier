@@ -10,7 +10,7 @@ var lastAlertId = undefined;
 
 function checkEverything() {
     $.ajax({
-        url: 'http://gotpvp.com/forum/index.php',
+        url: 'http://mc.chew.pw',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"http://");
             checkNotifications(data);
@@ -18,16 +18,16 @@ function checkEverything() {
 			checkNotificationDetails();
         }
     });
-	
+
 function checkNotificationDetails(){
     $.ajax({
-        url: 'http://gotpvp.com/forum/index.php?account/alerts',
+        url: 'http://mc.chew.pw/index.php?account/alerts',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"http://");
 			checkNotificationsEnchanced(data);
         }
-    });	
-}	
+    });
+}
 
     chrome.storage.sync.get("volume", function(response) {
         if (response.hasOwnProperty("volume")) {
@@ -80,11 +80,11 @@ chrome.notifications.onClicked.addListener(function(notificationid) {
     if (my_notids_alerts.indexOf(notificationid) > -1) {
         my_notids_alerts.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("http://gotpvp.com/forum/index.php?account/alerts");
+        window.open("http://mc.chew.pw/index.php?account/alerts");
     } else if (my_notids_messages.indexOf(notificationid) > -1) {
         my_notids_messages.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("http://gotpvp.com/forum/index.php?conversations/");
+        window.open("http://mc.chew.pw/index.php?conversations");
     }
 });
 
@@ -145,7 +145,7 @@ function checkNotificationsEnchanced(data){
 				saveLastAlertId($(this).attr('id'));
 			}
 			return false;
-		}); 
+		});
 }
 
 chrome.storage.local.get('lastAlert', function(response) {

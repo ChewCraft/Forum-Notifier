@@ -1,4 +1,4 @@
-var id = 'GotPvPNotify';
+var id = 'ChewNotify';
 
 $(document).ready(function() {
     chrome.storage.local.get('alerts', function(response) {
