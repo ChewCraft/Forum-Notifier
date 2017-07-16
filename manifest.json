@@ -1,8 +1,8 @@
 {
     "manifest_version":2,
     "name":"ChewCraft Notifier",
-    "description":"Get mc.chew.pw notifications in chrome.",
-    "version":"1.0",
+    "description":"Get ChewCraft notifications in chrome.",
+    "version":"1.1",
     "icons":{
         "32":"icon32.png",
         "48":"icon48.png",

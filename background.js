@@ -10,7 +10,7 @@ var lastAlertId = undefined;
 
 function checkEverything() {
     $.ajax({
-        url: 'http://mc.chew.pw',
+        url: 'http://chewcraft.me',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"http://");
             checkNotifications(data);
@@ -21,7 +21,7 @@ function checkEverything() {
 
 function checkNotificationDetails(){
     $.ajax({
-        url: 'http://mc.chew.pw/index.php?account/alerts',
+        url: 'http://chewcraft.me/index.php?account/alerts',
         success: function(data) {
             data = data.replace(/\"\/\//g, "\"http://");
 			checkNotificationsEnchanced(data);
@@ -80,11 +80,11 @@ chrome.notifications.onClicked.addListener(function(notificationid) {
     if (my_notids_alerts.indexOf(notificationid) > -1) {
         my_notids_alerts.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("http://mc.chew.pw/index.php?account/alerts");
+        window.open("http://chewcraft.me/index.php?account/alerts");
     } else if (my_notids_messages.indexOf(notificationid) > -1) {
         my_notids_messages.pop(notificationid);
         chrome.notifications.clear(notificationid);
-        window.open("http://mc.chew.pw/index.php?conversations");
+        window.open("http://chewcraft.me/index.php?conversations");
     }
 });
 
